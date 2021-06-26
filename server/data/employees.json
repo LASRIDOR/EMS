@@ -1,0 +1,47 @@
+[
+
+  {
+    "id": 1,
+    "fullName": "Kyle Lowry",
+    "phoneNumber": "0508510787",
+    "type": "Manager",
+    "startDate": "10/10/2020",
+    "daysInMonth": "10",
+    "currentMonthSalary": "0",
+    "mailAddres": "lasridor@gmail.com",
+    "gender": "M"
+  },
+  {
+    "id": 2,
+    "fullName": "Lebron James",
+    "phoneNumber": "0501234567",
+    "type": "Junior",
+    "startDate": "10/10/2020",
+    "daysInMonth": "20",
+    "currentMonthSalary": "0",
+    "mailAddres": "lasridor@gmail.com",
+    "gender": "M"
+  },
+  {
+    "id": 3,
+    "fullName": "Dor Lasri",
+    "phoneNumber": "0508912345",
+    "type": "Manager",
+    "startDate": "10/10/2020",
+    "daysInMonth": "30",
+    "currentMonthSalary": "0",
+    "mailAddres": "lasridor@gmail.com",
+    "gender": "M"
+  },
+  {
+    "id": 4,
+    "fullName": "Oded Shahashua",
+    "phoneNumber": "0505555333",
+    "type": "Senior",
+    "startDate": "10/10/2020",
+    "daysInMonth": "15",
+    "currentMonthSalary": "0",
+    "mailAddres": "lasridor@gmail.com",
+    "gender": "M"
+  }
+]
