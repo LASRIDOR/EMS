@@ -32,6 +32,7 @@ function EditForm(props) {
             phoneNumber: response.data.data.phoneNumber,
             type: response.data.data.type,
             daysInMonth: response.data.data.daysInMonth,
+            currentMonthSalary: "5000",
         }),
       )
       .catch(err => setErrorMessage('Fetch error. API is not available.'));

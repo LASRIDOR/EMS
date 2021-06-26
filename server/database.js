@@ -33,7 +33,7 @@ db.all(tableCheckQuery, function(err, rows) {
       "Manager",
       "10/10/2020",
       "30",
-      "0",
+      "5000",
       "lasridor@gmail.com",
       "M"
      ]);

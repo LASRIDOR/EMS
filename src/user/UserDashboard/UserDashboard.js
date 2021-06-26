@@ -8,9 +8,13 @@ import { Row, Col, Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import axios from 'axios';
 import SearchBar from '../../components/UI/SearchBar/SearchBar';
+import PhoneSearch from '../../components/UI/SearchBar/PhoneSearch';
+import TypeSearch from '../../components/UI/SearchBar/TypeSearch';
+import DaysInMonthSearch from '../../components/UI/SearchBar/DaysInMonth';
+import StartDateSearch from '../../components/UI/SearchBar/StartDateSearch';
 import TableTemplate from '../../components/Tables/TableTemplate';
 
-const url = 'https://ems-v1.herokuapp.com/api/employees';
+const url = 'http://localhost:8080/api/employees';
 
 class UserDashboard extends React.Component {
   state = {
@@ -48,7 +52,7 @@ class UserDashboard extends React.Component {
     window.location.href = '/add';
   };
 
-  changeHandler = prop => this.setState({ [prop.fullName]: prop.value });
+  changeHandler = prop => this.setState({ [prop.name]: prop.value });
 
   render() {
     const { employees, filterValue, filterEmployees } = this.state;
@@ -58,6 +62,26 @@ class UserDashboard extends React.Component {
     return (
       <div>
         <SearchBar
+          value={filterValue}
+          employees={employees}
+          changeHandler={this.changeHandler.bind(this)}
+        />
+        <PhoneSearch
+          value={filterValue}
+          employees={employees}
+          changeHandler={this.changeHandler.bind(this)}
+        />
+        <TypeSearch
+          value={filterValue}
+          employees={employees}
+          changeHandler={this.changeHandler.bind(this)}
+        />
+        <DaysInMonthSearch
+          value={filterValue}
+          employees={employees}
+          changeHandler={this.changeHandler.bind(this)}
+        />
+        <StartDateSearch
           value={filterValue}
           employees={employees}
           changeHandler={this.changeHandler.bind(this)}

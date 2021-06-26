@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const db = require('./database.js');
 
 const corsOptions = {
-  origin: 'https://ems-v1.herokuapp.com/',
+  origin: 'http://localhost:3000',
   optionsSuccessStatus: 200,
 };
 
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://ems-v1.herokuapp.com/');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   res.setHeader(
     'Access-Control-Allow-Methods',
     'GET, POST, OPTIONS, PUT, PATCH, DELETE',

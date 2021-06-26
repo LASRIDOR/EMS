@@ -21,7 +21,7 @@ const TableTemplate = ({
           { Header: 'Type', accessor: 'type' },
           { Header: 'Start Date', accessor: 'startDate' },
           { Header: 'days In Current Month', accessor: 'daysInMonth', show: false },
-          { Header: 'Current Month Salary', accessor: 'currentMonthSalary', show: false },
+          { Header: 'Current Month Salary', accessor: 'currentMonthSalary' },
           { Header: 'mailAddres', accessor: 'mailAddres', show: false },
           { Header: 'gender', accessor: 'gender', show: false },
           {

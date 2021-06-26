@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { filterHandler } from '../../../utils/FilterHandler';
+import { filterHandler } from '../../../utils/PhoneFilterHandler';
 
-const searchBar = ({ filterValue, employees, changeHandler }) => {
+const phoneSearch = ({ filterValue, employees, changeHandler }) => {
   return (
     <Wrapper>
       <Input
@@ -12,7 +12,7 @@ const searchBar = ({ filterValue, employees, changeHandler }) => {
         name="filter"
         required
         size="30"
-        placeholder="Search by employee's name..."
+        placeholder="Search by employee's phone..."
         onChange={e => filterHandler(e, employees, changeHandler)}
         value={filterValue}
       />
@@ -37,4 +37,4 @@ const Input = styled.input`
   color: rgb(48, 47, 47);
 `;
 
-export default searchBar;
+export default phoneSearch;
