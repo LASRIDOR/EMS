@@ -18,7 +18,8 @@ function AddForm() {
     fullName: '',
     type: '',
     phoneNumber: '',
-    daysInMonth: ''
+    daysInMonth: '',
+    currentMonthSalary: ''
   });
 
   const onChangeFullName = event => {
@@ -46,7 +47,7 @@ function AddForm() {
     setEmployee({
       ...employee,
       daysInMonth: event.target.value,
-    });
+      });
   };
 
   const isInputFieldEmpty = () => {
