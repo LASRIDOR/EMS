@@ -10,7 +10,7 @@ import axios from 'axios';
 import SearchBar from '../../components/UI/SearchBar/SearchBar';
 import TableTemplate from '../../components/Tables/TableTemplate';
 
-const url = 'http://localhost:8080/api/employees';
+const url = 'https://ems-v1.herokuapp.com/api/employees';
 
 class UserDashboard extends React.Component {
   state = {
